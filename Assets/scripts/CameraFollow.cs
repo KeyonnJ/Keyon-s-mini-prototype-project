@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    public float camRotate = 1000.0f;
+    public float camRotate = 100.0f;
     public GameObject player;
     
     public GameObject Cam;
-    private Vector3 offset = new Vector3(0.0f,2f,-4f);
+    private Vector3 offset = new Vector3(0.0f,4.48f,-2f);
     // Start is called before the first frame update
     void Start()
     {

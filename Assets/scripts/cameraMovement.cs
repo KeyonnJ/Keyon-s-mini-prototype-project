@@ -14,7 +14,7 @@ public class cameraMovement : MonoBehaviour
     private float pitch = 0.0f;
 
     public GameObject player;
-    private Vector3 offset = new Vector3(0.0f,2f,-4f);
+    private Vector3 offset = new Vector3(0.0f,4.48f,-2f);
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
