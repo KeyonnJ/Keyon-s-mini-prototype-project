@@ -8,7 +8,7 @@ public class CameraFollow : MonoBehaviour
     public GameObject player;
     
     public GameObject Cam;
-    private Vector3 offset = new Vector3(0.0f,4.48f,-2f);
+    private Vector3 offset = new Vector3(0.0f,3f,-2f);
     // Start is called before the first frame update
     void Start()
     {

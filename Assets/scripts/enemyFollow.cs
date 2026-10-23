@@ -24,6 +24,14 @@ public class enemyFollow : MonoBehaviour
         //theres also Vector3.Lerp, which slows down the gameobject as it gets closer to the target.
         transform.position = Vector3.MoveTowards(transform.position, target.position, step);
     }
-    
+     void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+
+        }
+
+    }
 
 }

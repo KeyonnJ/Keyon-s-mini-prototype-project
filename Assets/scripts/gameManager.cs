@@ -23,6 +23,11 @@ public class gameManager : MonoBehaviour
             //debug.log displays a message within the console in unity
             //Time.time is just a timer. specifically runs in decimals(float)
             Debug.Log("you survived for " + Time.time +" seconds.");
+            if(player.gameObject == null)
+            {
+                Debug.Log("ggs");
+            }
+            
 
             //how many seconds this code waits before playing again(within the () shown below, 1f
             yield return new WaitForSeconds(1f);
@@ -41,4 +46,5 @@ public class gameManager : MonoBehaviour
             Instantiate(enemyPrefab, new Vector3(5f, 0f, 10f), Transform.rotation(0,0,0));
         }*/
     }
+    
 }

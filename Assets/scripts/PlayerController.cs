@@ -28,4 +28,13 @@ public class PlayerController : MonoBehaviour
         transform.Translate(Vector3.forward * Time.deltaTime * Speed * forwardInput);
         
     }
+     void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.CompareTag("Enemy"))
+        {
+            Destroy(gameObject);
+
+        }
+
+    }
 }
